@@ -47,7 +47,7 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 -  Also the dataframe used to create the csv file is stored in the bucket would be used to create a bigquery table.
 
 
-##### Create a bigquery view for the curn rate calculation
+#### Create a bigquery view for the curn rate calculation
 
 -  Considering that the data moved from the google sheets to the bigquery table, the data is processed to get the churn rate.
 ![Bigquery Churn Table](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Bigquery_churn_table.png)
@@ -56,7 +56,7 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 
 
 
-##### Connect Bigquery to Looker Studio for visualization 
+#### Connect Bigquery to Looker Studio for visualization 
 
 -  Connect the bigquery view created to Looker Studio to visualize the data. 
 -  Create a dashboard to visualize the churn rate.
