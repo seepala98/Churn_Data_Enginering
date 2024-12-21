@@ -1,0 +1,7 @@
+apache-airflow
+pandas
+google-cloud-storage
+google-auth
+google-auth-oauthlib
+google-api-python-client
+google-cloud-bigquery
