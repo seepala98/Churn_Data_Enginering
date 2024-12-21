@@ -17,7 +17,7 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 -  Access the Airflow UI at `http://localhost:8080`
 -  To stop the environment: `docker-compose down`
 
-![Airflow Dashboard](img\Airflow_dashboard_run.png)
+![Airflow Dashboard](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Airflow_dashboard_run.png)
 
 #### Google sheets : 
 
@@ -43,16 +43,16 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 -  Schedule the DAG: `schedule_interval=timedelta(hours=8)`
 -  Create a task for pull data from google sheets.
 -  Create a task for store the data after processing to bucket.
-![Bucket Data](img\gsc_bucket.png)
+![Bucket Data](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/gsc_bucket.png)
 -  Also the dataframe used to create the csv file is stored in the bucket would be used to create a bigquery table.
 
 
 ##### Create a bigquery view for the curn rate calculation
 
 -  Considering that the data moved from the google sheets to the bigquery table, the data is processed to get the churn rate.
-![Bigquery Churn Table](img\Bigquery_churn_table.png)
+![Bigquery Churn Table](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Bigquery_churn_table.png)
 -  Create a bigquery view to get the churn rate. [churn_view.sql](churn_view.sql)
-![Bigquery Churn View](img\Bigquery_looker_view.png)
+![Bigquery Churn View](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Bigquery_looker_view.png)
 
 
 
