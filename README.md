@@ -1,6 +1,5 @@
-## Personal Development School (Churn Rate Assessment) 
+## Churn Rate Assessment 
 
-- Please find the document for the requirements for the churn rate assessment [Round 2 Technical interview.pdf](Round_2_Technical_interview.pdf).
 - Data Set used for the assessment: [Churn Rate Data](round2_technical_interview_raw_data.csv)
 #### Setup Airflow environment. 
 
