@@ -1,7 +1,7 @@
 ## Churn Rate Assessment 
 
 - Data Set used for the assessment: [Churn Rate Data](data\round2_technical_interview_raw_data.csv)
-#### Setup Airflow environment. 
+### Setup Airflow environment. 
 
 This is the site used to setup the environment locally: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
 
@@ -21,13 +21,13 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 
 ![Airflow Dashboard](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Airflow_dashboard_run.png)
 
-#### Google sheets : 
+### Google sheets : 
 
 -  Import data from the excel sheet to google sheets: https://docs.google.com/spreadsheets/d/1CpJfmK7JxpAffN9X3DofzJK_sUth0MED1ZSrP1vf7pI/edit?usp=sharing  
 -  Share the google sheet with the service account email to access the data.
 -  This is the file that is fetched in the dag to push to bigquery table and the gcs bucket.
 
-#### Create DAGs
+### Create DAGs
 
 -  Create a new DAG file: `touch dags/churn_data.py`
 -  Python DAG includes config of the DAG, tasks, and task dependencies
@@ -49,7 +49,7 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 -  Also the dataframe used to create the csv file is stored in the bucket would be used to create a bigquery table.
 
 
-#### Create a bigquery view for the curn rate calculation
+### Create a bigquery view for the curn rate calculation
 
 -  Considering that the data moved from the google sheets to the bigquery table, the data is processed to get the churn rate.
 ![Bigquery Churn Table](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Bigquery_churn_table.png)
@@ -58,14 +58,14 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 
 
 
-#### Connect Bigquery to Looker Studio for visualization 
+### Connect Bigquery to Looker Studio for visualization 
 
 -  Connect the bigquery view created to Looker Studio to visualize the data. 
 -  Create a dashboard to visualize the churn rate.
 [Looker Dashboard](https://lookerstudio.google.com/reporting/d74712e0-c8fc-4b77-a753-794ca2f49121)
 
 
-#### Key Insights: 
+### Key Insights: 
 
 - High Initial Retention Followed by Rapid Drop-off:
     - Many cohorts show high retention in the first month but experience a significant drop-off in subsequent months.
@@ -83,7 +83,7 @@ This is the site used to setup the environment locally: https://airflow.apache.o
     - There is a general trend of declining retention rates over time. This indicates that while initial acquisition is strong, retaining users over the long term remains a challenge.
 
 
-#### Recommendations:
+### Recommendations:
 - Improve Onboarding and Engagement:
     - Focus on improving the onboarding process and engagement strategies to reduce the initial drop-off in the first few months.
 
