@@ -1,6 +1,6 @@
 ## Churn Rate Assessment 
 
-- Data Set used for the assessment: [Churn Rate Data](round2_technical_interview_raw_data.csv)
+- Data Set used for the assessment: [Churn Rate Data](data\round2_technical_interview_raw_data.csv)
 #### Setup Airflow environment. 
 
 This is the site used to setup the environment locally: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
@@ -13,6 +13,9 @@ This is the site used to setup the environment locally: https://airflow.apache.o
     - setip environment variable: `export AIRFLOW_UID=$(id -u)`
     - Initialize Airflow: `docker-compose up airflow-init`
     - Docker compose to spin up the environment: `docker-compose up -d`
+
+![Airflow Dashboard](https://github.com/seepala98/Churn_Data_Enginering_Assessment/blob/master/img/Docker_Containers.png)
+
 -  Access the Airflow UI at `http://localhost:8080`
 -  To stop the environment: `docker-compose down`
 
