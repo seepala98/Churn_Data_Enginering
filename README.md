@@ -63,3 +63,32 @@ This is the site used to setup the environment locally: https://airflow.apache.o
 -  Connect the bigquery view created to Looker Studio to visualize the data. 
 -  Create a dashboard to visualize the churn rate.
 [Looker Dashboard](https://lookerstudio.google.com/reporting/d74712e0-c8fc-4b77-a753-794ca2f49121)
+
+
+#### Key Insights: 
+
+- High Initial Retention Followed by Rapid Drop-off:
+    - Many cohorts show high retention in the first month but experience a significant drop-off in subsequent months.
+
+- Consistent Retention for Some Cohorts:
+    - Some cohorts maintain a consistent number of active users over several months. But those seems to be related to courses that are subscribed for 24 months. But looks like there isnt churn in for courses.
+
+- Seasonal Trends:
+    - There are noticeable peaks in the number of new subscriptions during certain months. For instance, the cohort from "2021/01" has a significantly higher number of new subscriptions (1111 users) compared to other months. This could indicate a seasonal trend or a successful marketing campaign during that period.
+
+- Impact of External Factors:
+    - The data shows a significant increase in new subscriptions starting from "2020/04" and peaking in "2021/01". This period coincides with the COVID-19 pandemic, suggesting that external factors may have influenced user behavior and subscription rates.
+
+- Retention Decline Over Time:
+    - There is a general trend of declining retention rates over time. This indicates that while initial acquisition is strong, retaining users over the long term remains a challenge.
+
+
+#### Recommendations:
+- Improve Onboarding and Engagement:
+    - Focus on improving the onboarding process and engagement strategies to reduce the initial drop-off in the first few months.
+
+- Analyze Successful Cohorts:
+    - Investigate the strategies used for cohorts with high long-term retention (e.g., "2019/12" and "2020/12") and apply similar tactics to other cohorts.
+
+- Seasonal Campaigns:
+    - Leverage the insights from seasonal trends to plan marketing campaigns during peak periods to maximize new subscriptions.
