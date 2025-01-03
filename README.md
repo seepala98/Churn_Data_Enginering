@@ -1,6 +1,6 @@
-## Churn Rate Assessment 
+## Churn Rate 
 
-- Data Set used for the assessment: [Churn Rate Data](data\round2_technical_interview_raw_data.csv)
+- Data Set used: [Churn Rate Data](data\round2_technical_interview_raw_data.csv)
 ### Setup Airflow environment. 
 
 This is the site used to setup the environment locally: https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
